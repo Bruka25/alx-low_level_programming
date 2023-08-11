@@ -7,7 +7,7 @@
  * main - Entry point of the program
  *
  * Description: Prints whether the randomly generated number is negative,
- *              zero, or positive.
+ *              zero, or positive along with its value.
  *
  * Return: Always 0 (Success)
  */
@@ -20,15 +20,15 @@ int main(void)
 
 	if (n < 0)
 	{
-		printf("n is negative\n");
+		printf("%d is negative\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("n is zero\n");
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("n is positive\n");
+		printf("%d is positive\n", n);
 	}
 
 	return (0);
