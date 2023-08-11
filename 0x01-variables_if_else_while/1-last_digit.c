@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+int lastDigit(int n);
+
 /**
  * main - Entry point of the program
  *
@@ -17,11 +19,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	int lastDigit(int n)
-	{
-		return (n % 10);
-	}
 
 	scanf("%d", &n);
 	lastD = lastDigit(n);
@@ -40,4 +37,15 @@ int main(void)
 	}
 
 	return (0);
+}
+
+/**
+ * lastDigit - Returns the last digit of a number
+ * @n: The number to extract the last digit from
+ *
+ * Return: The last digit of the number
+ */
+int lastDigit(int n)
+{
+	return (n % 10);
 }
