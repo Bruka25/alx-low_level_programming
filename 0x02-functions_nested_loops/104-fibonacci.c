@@ -11,7 +11,7 @@ int main(void)
 	int count;
 	unsigned long fib1 = 0, fib2 = 1, sum;
 	unsigned long fib1_h1, fib1_h2, fib2_h1, fib2_h2;
-	unsigned long half1, half2;
+	unsigned long h1, h2;
 
 	for (count = 0; count < 92; count++)
 	{
