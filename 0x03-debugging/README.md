@@ -1,1 +1,1 @@
-The following c files are for the debugging project for Alx
+the following are c programs for the ALX c debugging project
