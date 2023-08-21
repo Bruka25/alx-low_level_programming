@@ -1,1 +1,1 @@
-The following programs are for ALX c pointers and arrays project
+the following c programs are for ALX c pointers and array project
