@@ -21,7 +21,7 @@ void rev_string(char *s)
 		c++;
 	}
 	c--;
-	while (i >= 0)
+	while (c >= 0)
 	{
 		s[c] = r[d];
 		c--;
