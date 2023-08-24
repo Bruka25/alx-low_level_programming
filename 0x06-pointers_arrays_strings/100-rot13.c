@@ -1,32 +1,31 @@
 #include "main.h"
 
 /**
- * rot13 - encodes a string using ROT13 cipher
+ *rot13 - prints encoded string using rot13
  *
- * @str: String to be encoded
+ *@str: String to be encoded
  *
- * Return: Encoded string
+ *Return: Encoded string
  */
 
 char *rot13(char *str)
 {
-	char storeh[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
-	char storel[] = "nopqrstuvwxyzabcdefghijklm";
-	int i = 0;
+	int i, j;
+	char beta[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char boolean;
 
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if ((str[i] >= 'a' && str[i] <= 'z') ||
-		    (str[i] >= 'A' && str[i] <= 'Z'))
+		boolean = 0;
+		for (j = 0; alpha[j] != '\0' && boolean == 0; j++)
 		{
-			int shift = (str[i] >= 'a' && str[i] <= 'z') ? 'a' : 'A';
-
-			if ((str[i] - shift) > 12)
-				str[i] -= 13;
-			else
-				str[i] += 13;
+			if (str[i] == alpha[j])
+			{
+				str[i] = beta[j];
+				boolean = 1;
+			}
 		}
-		i++;
 	}
 	return (str);
 }
