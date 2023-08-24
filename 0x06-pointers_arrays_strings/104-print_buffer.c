@@ -1,5 +1,5 @@
-include <main.h>
-include <stdio.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
  * print_buffer - Prints a buffer 10 bytes at a time, starting with
@@ -22,7 +22,7 @@ void print_buffer(char *b, int size)
 				printf("  ");
 
 			else
-				printf("%02x", *(bit+ idx + y));
+				printf("%02x", *(bit + idx + y));
 
 			if ((idx % 2) != 0 && idx != 0)
 				printf(" ");
