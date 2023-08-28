@@ -9,28 +9,17 @@ include "main.h"
 
 char *_strstr(char *haystack, char *needle)
 {
-	int index;
-
-	if (*needle == 0)
-		return (haystack);
-
-	while (*haystack)
+	unsigned int len;
+	/*Get length of needle for strncmp*/
+	len = 0;
+	while (needle[len] != '\0')
+		len++;
+	/*compare substring*/
+	while (*haystack != '\0')
 	{
-		index = 0;
-
-		if (haystack[index] == needle[index])
-		{
-			do {
-				if (needle[index + 1] == '\0')
-					return (haystack);
-
-				index++;
-
-			} while (haystack[index] == needle[index]);
-		}
-
+		if (_strncmp(haystack, needle, len) == 0)
+			return (haystack);
 		haystack++;
 	}
-
-	return ('\0');
+	return (NULL);
 }
