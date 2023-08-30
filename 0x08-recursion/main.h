@@ -13,5 +13,7 @@ int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int guess(int h, int i);
 int prime_div(int num, int div);
+int check(char *str, int len, int count);
+int str_length(char *s);
 
 #endif /*MAIN_H*/
