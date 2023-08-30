@@ -15,5 +15,6 @@ int guess(int h, int i);
 int prime_div(int num, int div);
 int check(char *str, int len, int count);
 int str_length(char *s);
+int findsrc(char *s, char c, int i, int p);
 
 #endif /*MAIN_H*/
