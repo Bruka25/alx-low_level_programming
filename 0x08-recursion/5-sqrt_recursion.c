@@ -15,7 +15,7 @@ int guess(int h, int i)
 	if (sqrt == h)
 		return (i);
 	else if (sqrt < h)
-		return (sqrt(h, i + 1));
+		return (guess(h, i + 1));
 	else
 		return (-1);
 }
@@ -32,3 +32,4 @@ int _sqrt_recursion(int n)
 {
 	return (guess(n, 1));
 }
+
