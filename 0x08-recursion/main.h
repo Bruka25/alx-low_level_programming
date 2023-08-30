@@ -12,5 +12,6 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int _putchar(char c);
 int guess(int h, int i);
+int prime_div(int num, int div);
 
 #endif /*MAIN_H*/
