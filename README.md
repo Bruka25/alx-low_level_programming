@@ -53,8 +53,10 @@ If you'd like to contribute to this project, you're welcome to do so. Contributi
 
 1.Fork this repository.
 
-2.Create a new branch for your contribution: 
-```bash git checkout -b feature/my-feature
+2.Create a new branch for your contribution:
+ 
+```bash 
+git checkout -b feature/my-feature
 
 3.Make your changes, ensuring they align with the project's goals.
 
