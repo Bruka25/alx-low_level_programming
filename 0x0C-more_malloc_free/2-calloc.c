@@ -13,8 +13,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *array;
-	unsigned int byte, i;
-	char *index;
+	unsigned int byte, i = 0;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -22,11 +21,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	array = malloc(byte);
 	if (ar == NULL)
 		return (NULL);
-	index = array;
 
 	while (i < byte)
 	{
-		index[i] = '\0';
+		array[i] = 0;
 		i++;
 	}
 	return (array);
