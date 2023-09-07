@@ -23,6 +23,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (array == NULL)
 		return (NULL);
-	for (i = 0; i < byte && array[i] == 0; i++)
+	while (i < byte)
+	{
+		array[i] = 0;
+		i++;
+	}
 	return (array);
 }
