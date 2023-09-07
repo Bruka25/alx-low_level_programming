@@ -12,16 +12,14 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *array;
-	unsigned int i;
-	unsigned int byte;
+	char *array;
+	unsigned int byte, i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	byte = size * nmemb;
+	byte = nmemb * size;
 	array = malloc(byte);
-
-	if (array == NULL)
+	if (ar == NULL)
 		return (NULL);
 	while (i < byte)
 	{
