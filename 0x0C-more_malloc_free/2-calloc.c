@@ -18,10 +18,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	byte = size * nmemb
+	byte = size * nmemb;
 	array = malloc(byte);
 
-	if (p == NULL)
+	if (array == NULL)
 		return (NULL);
 	for (i = 0; i < nmemb ; i++)
 		array[i] = 0;
