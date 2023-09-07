@@ -7,25 +7,30 @@
  *@nmemb: Members of an array
  *@size: Size of an array
  *
- *Return: Void
+ *Return: Pointer to the allocated mem
  */
-
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	int i = 0, j = 0;
 	char *array;
-	unsigned int byte, i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	byte = nmemb * size;
-	array = malloc(byte);
+
+	j = nmemb * size;
+	array = malloc(j);
+
 	if (array == NULL)
 		return (NULL);
-	while (i < byte)
+
+	while (i < j)
 	{
 		array[i] = 0;
 		i++;
 	}
+
 	return (array);
 }
+
+
