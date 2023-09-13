@@ -13,11 +13,6 @@
  *         number of args, exit with 99 if the operator given is incorrect
  */
 
-#include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 int main(int argc, char *argv[])
 {
 	if (argc != 4)
