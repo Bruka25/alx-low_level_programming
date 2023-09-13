@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		num2 = atoi(argv[3]);
 		res = operation(num1, num2);
 
-		printf("operation response %d\n", res);
+		printf("%d\n", res);
 		return (0);
 	}
 	else
