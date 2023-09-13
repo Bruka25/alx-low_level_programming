@@ -13,25 +13,40 @@
  *         number of args, exit with 99 if the operator given is incorrect
  */
 
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 int main(int argc, char *argv[])
 {
 	if (argc != 4)
 	{
-		fprintf(stderr, "Usage: %s <num1> <operator> <num2>\n", argv[0]);
+		printf("Error\n");
 		return (98);
 	}
-	int num1 = atoi(argv[1]);
+
 	char *operator = argv[2];
+	int num1 = atoi(argv[1]);
 	int num2 = atoi(argv[3]);
 
-	if (strlen(operator) != 1 || !get_op_func(operator))
+	if (strlen(operator) != 1)
 	{
-		fprintf(stderr, "Error: Invalid operator\n");
+		printf("Error\n");
 		return (99);
 	}
 
-	int result = get_op_func(operator)(num1, num2);
+	int result;
+	int (*operation)(int, int) = get_op_func(operator);
 
-	printf("%d %s %d = %d\n", num1, operator, num2, result);
+	if (operation == NULL)
+	{
+		printf("Error\n");
+		return (99);
+	}
+
+	result = operation(num1, num2);
+	printf("%d\n", result);
+
 	return (0);
 }
