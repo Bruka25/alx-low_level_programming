@@ -12,35 +12,26 @@
  * Return: 0 on success, print Error and exit with 98 if incorrect
  *         number of args, exit with 99 if the operator given is incorrect
  */
+
 int main(int argc, char *argv[])
 {
-	int (*operation)(int, int);
-	int num1, num2, res;
-
-	if (argc == 4)
+	if (argc != 4)
 	{
-		if (strlen(argv[2]) != 1)
-		{
-			printf("Error\n");
-			exit(99);
-		}
-		operation = get_op_func(argv[2]);
-		if (operation == NULL)
-		{
-			printf("Error\n");
-			exit(99);
-		}
-
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[3]);
-		res = operation(num1, num2);
-
-		printf("operation response %d\n", res);
-		return (0);
+		fprintf(stderr, "Usage: %s <num1> <operator> <num2>\n", argv[0]);
+		return (98);
 	}
-	else
+	int num1 = atoi(argv[1]);
+	char *operator = argv[2];
+	int num2 = atoi(argv[3]);
+
+	if (strlen(operator) != 1 || !get_op_func(operator))
 	{
-		printf("Error\n");
-		exit(98);
+		fprintf(stderr, "Error: Invalid operator\n");
+		return (99);
 	}
+
+	int result = get_op_func(operator)(num1, num2);
+
+	printf("%d %s %d = %d\n", num1, operator, num2, result);
+	return (0);
 }
