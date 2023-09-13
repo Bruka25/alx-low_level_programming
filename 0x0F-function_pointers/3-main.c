@@ -15,33 +15,33 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc != 4)
+	int (*operation)(int, int);
+	int num1, num2, res;
+
+	if (argc == 4)
+	{
+		if (strlen(argv[2]) != 1)
+		{
+			printf("Error\n");
+			exit(99);
+		}
+		operation = get_op_func(argv[2]);
+		if (operation == NULL)
+		{
+			printf("Error\n");
+			exit(99);
+		}
+
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[3]);
+		res = operation(num1, num2);
+
+		printf("operation response %d\n", res);
+		return (0);
+	}
+	else
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
-
-	char *operator = argv[2];
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[3]);
-
-	if (strlen(operator) != 1)
-	{
-		printf("Error\n");
-		return (99);
-	}
-
-	int result;
-	int (*operation)(int, int) = get_op_func(operator);
-
-	if (operation == NULL)
-	{
-		printf("Error\n");
-		return (99);
-	}
-
-	result = operation(num1, num2);
-	printf("%d\n", result);
-
-	return (0);
 }
