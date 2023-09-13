@@ -14,8 +14,8 @@
 
 int main(int argc, char *argv[])
 {
-	int (*operation)(int, int);
-	int num1, num2, res;
+	int num1, num2;
+	char *operation;
 
 	if (argc != 4)
 	{
@@ -23,23 +23,24 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	operation = get_op_func(argv[2]);
+	num1 = atoi(argv[1]);
+	operation = argv[2];
+	num2 = atoi(argv[3]);
 
-	if (!operation)
+	if (get_op_func(operation) == NULL || operation[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	res = operation(num1, num2);
 
-	printf("operation response %d\n", res);
-	return (0);
-	}
-	else
+	if ((*operation == '/' && num2 == 0) ||
+	    (*operation == '%' && num2 == 0))
 	{
 		printf("Error\n");
-		exit(98);
+		exit(100);
 	}
+
+	printf("operation response %d\n", get_op_func(operation)(num1, num2));
+
+	return (0);
 }
