@@ -12,6 +12,7 @@
  *         number of args, exit with 99 if the operator given is incorrect
  */
 
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num1, num2;
 	char *operation;
