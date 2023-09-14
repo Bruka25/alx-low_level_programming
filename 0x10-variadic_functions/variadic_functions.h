@@ -2,12 +2,15 @@
 #define VARIADIC_H
 #define FORMAT(f) ("%"#f)
 
+#include <stdarg.h>
+
 /**
  *struct print_form - Define a format to print
  *
  *@c: Character to check for
  *@f: Pointer to function to call
  */
+
 
 typedef struct print_form
 {
