@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
-
+#include <stdio.h>
 
 /**
  * print_before_main - Print statement running main
