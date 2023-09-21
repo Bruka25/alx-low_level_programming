@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+
 /**
  *print_list - Prints all the elements of list_t list
  *
@@ -13,16 +14,18 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t nodes;
+	size_t nodes = 0;
 
-	if (h == NULL)
-		return (0);
+	while (h != NULL)
+	{
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%d] %s\n", h->len, h->str);
 
-	nodes = 1;
+		h = h->next;
+		nodes++;
+	}
 
-	printf("[%d] %s\n", h->len, h->str);
-	if (h->next != NULL)
-		nodes += print_list(h->next);
 	return (nodes);
 }
-
