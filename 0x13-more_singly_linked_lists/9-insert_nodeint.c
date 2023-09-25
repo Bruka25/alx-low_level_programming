@@ -22,7 +22,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 	if (head == NULL)
 		return (NULL);
 	current_node = *head;
-	count_node = 0;
+	node_pos = 0;
 	if (current_node == NULL && index != 0)
 		return (NULL);
 
