@@ -26,7 +26,7 @@ size_t free_listint_safe(listint_t **h)
 		current_node = current_node->next;
 		free(temp);
 
-		if (temp < current)
+		if (temp < current_node)
 			break;
 	}
 	*h = NULL;
