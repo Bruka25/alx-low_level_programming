@@ -1,0 +1,7 @@
+The following functions are C programs for ALX 0x15-file_io project, inside it contains the following C functions:
+
+* A function that reads a text file and prints it to the POSIX standard output
+* A function that creates a file
+* A function that appends text at the end of a file
+* A program that copies the content of a file to another file
+* A program that displays the information contained in the ELF header at the start of an ELF file
