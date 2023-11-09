@@ -50,7 +50,7 @@ int main(int ac, char *av[])
   *
   *@p: argv[1]
   *@pl: length of argv[1]
-  *@flag: determine if f2 or f3
+  *@flag: Controls if the function performs addition or multiplication
   *
   *Return: Key array element
   */
