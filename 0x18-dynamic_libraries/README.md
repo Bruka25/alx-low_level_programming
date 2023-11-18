@@ -41,14 +41,14 @@ C Dynamic Libraries Guide
 Overview
 This guide introduces dynamic libraries in C programming, explaining their purpose, creation, usage, and benefits. Understanding dynamic libraries is essential for creating reusable code modules and enhancing program modularity.
 
-Table of Contents
-Introduction to Dynamic Libraries
-Creating Dynamic Libraries
-Using Dynamic Libraries
-Repository Setup
-Compilation Process
-Examples
-Conclusion
+* Table of Contents
+* Introduction to Dynamic Libraries
+* Creating Dynamic Libraries
+* Using Dynamic Libraries
+* Repository Setup
+* Compilation Process
+* Examples
+* Conclusion
 
 Introduction to Dynamic Libraries
 Dynamic libraries, also known as shared libraries, contain reusable code that can be loaded into a program at runtime. They allow multiple programs to share the same code, reducing redundancy and enhancing maintainability.

@@ -12,13 +12,13 @@ C Singly Linked List Guide
 Overview
 This guide introduces singly linked lists in C programming, explaining their structure, operations, and implementation. Understanding singly linked lists is essential for managing dynamic data structures efficiently.
 
-Table of Contents
-Introduction to Singly Linked Lists
-Basic Operations on Singly Linked Lists
-Repository Setup
-Compilation Process
-Examples
-Conclusion
+* Table of Contents
+* Introduction to Singly Linked Lists
+* Basic Operations on Singly Linked Lists
+* Repository Setup
+* Compilation Process
+* Examples
+* Conclusion
 
 Introduction to Singly Linked Lists
 A singly linked list is a linear data structure consisting of nodes where each node contains data and a pointer to the next node in the sequence. The last node points to NULL, indicating the end of the list. Singly linked lists facilitate dynamic memory allocation and efficient insertion and deletion of elements.

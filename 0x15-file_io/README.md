@@ -10,14 +10,14 @@ C File Input/Output (I/O) Guide
 Overview
 This guide introduces File Input/Output (I/O) operations in C programming, demonstrating file handling, reading, writing, and manipulation. Understanding file I/O is essential for interacting with files, performing data input/output, and managing file-related operations in C.
 
-Table of Contents
-Introduction to File I/O
-File Modes in C
-Basic File Operations
-Repository Setup
-Compilation Process
-Examples
-Conclusion
+* Table of Contents
+* Introduction to File I/O
+* File Modes in C
+* Basic File Operations
+* Repository Setup
+* Compilation Process
+* Examples
+* Conclusion
 
 Introduction to File I/O
 File Input/Output (I/O) in C involves operations for reading data from files, writing data to files, and managing file pointers. It includes opening, closing, reading, and writing to files using standard library functions.

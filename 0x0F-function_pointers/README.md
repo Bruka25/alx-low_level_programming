@@ -11,13 +11,14 @@ C Functions and Pointers Guide
 Overview
 This guide introduces the concept of functions and pointers in C programming, illustrating their importance in creating modular code and enabling efficient memory management.
 
-Table of Contents
-Introduction to C Functions
-Understanding Pointers in C
-Repository Setup
-Compilation Process
-Examples
-Conclusion
+* Table of Contents
+* Introduction to C Functions
+* Understanding Pointers in C
+* Repository Setup
+* Compilation Process
+* Examples
+* Conclusion
+
 Introduction to C Functions
 Functions in C allow the modularization of code by breaking it into smaller, manageable units. They promote code reusability and readability by encapsulating specific tasks or computations.
 

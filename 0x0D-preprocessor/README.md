@@ -2,13 +2,13 @@ C Preprocessor Guide
 Overview
 This guide provides an introduction to the C preprocessor, its functionalities, and instructions on using it for compiling code, managing repositories, and file compilation.
 
-Table of Contents
-What is the C Preprocessor?
-Repository Setup
-Compilation Process
-File Compilation
-Examples
-Conclusion
+* Table of Contents
+* What is the C Preprocessor?
+* Repository Setup
+* Compilation Process
+* File Compilation
+* Examples
+* Conclusion
 
 What is the C Preprocessor?
 The C preprocessor is a tool that processes the source code before compilation, performing tasks such as macro substitution, conditional compilation, and file inclusion. It enhances code maintainability and flexibility.

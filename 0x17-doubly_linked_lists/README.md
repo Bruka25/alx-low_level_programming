@@ -18,13 +18,13 @@ C Doubly Linked List Guide
 Overview
 This guide introduces doubly linked lists in C programming, explaining their structure, operations, and implementation. Understanding doubly linked lists is essential for managing dynamic data structures efficiently.
 
-Table of Contents
-Introduction to Doubly Linked Lists
-Basic Operations on Doubly Linked Lists
-Repository Setup
-Compilation Process
-Examples
-Conclusion
+* Table of Contents
+* Introduction to Doubly Linked Lists
+* Basic Operations on Doubly Linked Lists
+* Repository Setup
+* Compilation Process
+* Examples
+* Conclusion
 
 Introduction to Doubly Linked Lists
 A doubly linked list is a linear data structure that consists of nodes where each node contains data, a pointer to the next node, and a pointer to the previous node. This bidirectional linking facilitates traversal in both forward and backward directions.
