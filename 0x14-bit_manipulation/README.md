@@ -13,14 +13,14 @@ Bit Manipulation in C Guide
 Overview
 This guide introduces bit manipulation in C programming, demonstrating bitwise operations, their significance, and practical use cases. Understanding bit manipulation is crucial for handling individual bits within binary representations efficiently.
 
-Table of Contents
-Introduction to Bit Manipulation
-Bitwise Operators in C
-Common Bit Manipulation Techniques
-Repository Setup
-Compilation Process
-Examples
-Conclusion
+* Table of Contents
+* Introduction to Bit Manipulation
+* Bitwise Operators in C
+* Common Bit Manipulation Techniques
+* Repository Setup
+* Compilation Process
+* Examples
+* Conclusion
 
 Introduction to Bit Manipulation
 Bit manipulation involves performing operations at the bit level, allowing manipulation of individual bits or groups of bits within a data value. It is useful for tasks such as setting, clearing, toggling bits, or extracting specific bits' information.

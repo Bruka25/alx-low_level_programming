@@ -15,12 +15,13 @@ Overview
 This guide introduces C structures and the typedef keyword, essential elements in C programming for organizing data into meaningful structures and creating custom data types.
 
 Table of Contents
-Introduction to C Structures
-Using Typedef in C
-Repository Setup
-Compilation Process
-Examples
-Conclusion
+* Introduction to C Structures
+* Using Typedef in C
+* Repository Setup
+* Compilation Process
+* Examples
+* Conclusion
+
 Introduction to C Structures
 C Structures (struct) allow the grouping of different data types into a single unit. Each element within a structure is called a member, and they can have different data types. Structures help in organizing and handling complex data effectively.
 
@@ -44,7 +45,7 @@ For compiling C code containing structures and typedef:
 Compile the Code: Use a C compiler to compile the source code containing structures and typedef. For example:
 
 ```
-gcc gcc -Wall -Werror -Wextra -pedantic -std=c89 source_code.c -o output_executable
+gcc -Wall -Werror -Wextra -pedantic -std=c89 source_code.c -o output_executable
 ```
 Run the Executable: Execute the compiled code using:
 

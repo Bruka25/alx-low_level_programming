@@ -9,13 +9,13 @@ C Variadic Functions Guide
 Overview
 This guide introduces variadic functions in C programming, which allow the creation of functions with a variable number of arguments. Understanding variadic functions enables the development of flexible and adaptable functions that can handle varying numbers of parameters.
 
-Table of Contents
-Introduction to Variadic Functions
-Working with Variadic Functions
-Repository Setup
-Compilation Process
-Examples
-Conclusion
+* Table of Contents
+* Introduction to Variadic Functions
+* Working with Variadic Functions
+* Repository Setup
+* Compilation Process
+* Examples
+* Conclusion
 
 Introduction to Variadic Functions
 Variadic functions in C are functions that can accept a varying number of arguments. They utilize ellipsis (...) in their parameter lists to denote this flexibility. Examples of variadic functions in C include printf and scanf.
@@ -49,7 +49,7 @@ For compiling C code containing variadic functions:
 Compile the Code: Use a C compiler to compile the source code containing variadic functions. For example:
 
 ```
-gcc gcc -Wall -Werror -Wextra -pedantic -std=c89 source_code.c -o output_executable
+gcc -Wall -Werror -Wextra -pedantic -std=c89 source_code.c -o output_executable
 ```
 Run the Executable: Execute the compiled code using:
 
