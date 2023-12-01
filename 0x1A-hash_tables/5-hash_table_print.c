@@ -13,19 +13,19 @@ void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *temp;
 	unsigned long int h;
-	int switch;
+	int alternate;
 
 	if (ht == NULL)
 		return;
 
 	printf("{");
 
-	for (h = 0, switch = 0; h < ht->size; h++)
+	for (h = 0, alternate = 0; h < ht->size; h++)
 	{
 		temp = ht->array[h];
 		if (temp != NULL)
 		{
-			if (switch == 1)
+			if (alternate == 1)
 				printf(", ");
 			printf("'%s': '%s'", temp->key, temp->value);
 
@@ -35,7 +35,7 @@ void hash_table_print(const hash_table_t *ht)
 				printf("'%s': '%s'", temp->key, temp->value);
 			}
 
-			switch = 1;
+			alternate = 1;
 		}
 	}
 
