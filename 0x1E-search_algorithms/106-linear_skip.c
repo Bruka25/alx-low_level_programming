@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- *linear_skip - Function that searches for a value using the 
+ *linear_skip - Function that searches for a value using the
  *              jump search algorithm
  *
  *@list: Pointer to the head of the singly linked list
