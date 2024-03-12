@@ -2,7 +2,8 @@
 
 
 /**
- *binary_search - Function that searches a ascending sorted array to find a value
+ *binary_search - Function that searches a ascending sorted
+ *                array to find a value
  *
  *@array: Pointer to first element in array to search
  *@size: number of elements in array
